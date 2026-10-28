@@ -59,8 +59,10 @@ In this exercise, you will practice using pytest to test a simple command-line c
 6. Run the tests using the following command:
 
    ```bash
-   pytest test_calculator.py
-   ```
+    docker build -t pytest-tests .
+    docker run --rm pytest-tests
+    echo $?
+    ```
 
 7. Observe the test results and ensure that all tests pass successfully.
 
